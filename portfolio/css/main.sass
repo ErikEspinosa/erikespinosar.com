@@ -1,0 +1,114 @@
+@import url(https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+$primary: #583D72
+$secondary: #9F5F80
+$accent: #FFC996
+$black: #333333
+$white: #ffffff
+
+body
+    font-family: 'Poppins', sans-serif
+    font-size: 16px
+    color: $black
+    h1, h2, h3, h4, h5, h6
+        font-family: 'Roboto Slab', serif
+    p
+        font-size: 1rem
+        font-weight: 400
+
+.navbar
+    background: linear-gradient(90deg, $primary, $secondary)
+    color: $white
+    .logo
+        img
+            height: 50px
+            &:hover
+                transition: all 0.4s ease-in-out
+                transform: scale(1.1)
+                opacity: 0.8
+    .menu
+        color: $white
+        a
+            color: $white
+            margin-left: 1rem
+            &:hover > svg
+                transition: all 0.4s ease-in-out
+                transform: scale(1.2)
+                opacity: 0.8
+
+.title
+    text-align: center
+    h1
+        font-size: 3rem
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 0.2rem
+    p
+        font-size: 1.4rem
+
+.portfolio-card
+    color: $white
+    padding: 4rem
+    text-align: center
+    h3
+        font-size: 2rem
+        font-weight: 700
+        line-height: 2rem
+        margin-bottom: 0.5rem
+    p
+        font-size: 1.2rem
+    .link
+        margin-top: 1rem
+        a
+            color: $white
+            svg
+                width: 2rem
+                height: auto
+                transition: all 0.4s ease-in-out
+    &:hover a > svg
+        transform: rotate(-180deg)
+
+.mttm
+    background: linear-gradient(rgba(112, 24, 89, 0.85), rgba(112, 24, 89, 0.85)), url('../assets/mtm.jpg')
+    background-position: center center
+    background-size: cover
+.pet
+    background: linear-gradient(rgba(252, 192, 96, 0.85), rgba(252, 192, 96, 0.85)), url('../assets/pet.jpg')
+    background-position: center center
+    background-size: cover
+.aga
+    background: linear-gradient(rgba(91, 20, 38, 0.85), rgba(91, 20, 38, 0.85)), url('../assets/aga.jpg')
+    background-position: center center
+    background-size: cover
+.adm
+    background: linear-gradient(rgba(49, 40, 131, 0.85), rgba(49, 40, 131, 0.85)), url('../assets/adm.jpg')
+    background-position: center center
+    background-size: cover
+.ile
+    background: linear-gradient(rgba(80, 80, 126, 0.85), rgba(80, 80, 126, 0.85)), url('../assets/ile.jpg')
+    background-position: center center
+    background-size: cover
+.idc
+    background: linear-gradient(rgba(25, 125, 139, 0.85), rgba(25, 125, 139, 0.85)), url('../assets/idc.jpg')
+    background-position: center center
+    background-size: cover
+
+footer
+    background: $black
+    color: $white
+    font-size: 0.8rem
+
+@media screen and (max-width: 768px )
+    .navbar
+        .logo
+            img
+                height: 40px
+    .title
+        h1
+            font-size: 2rem
+        p
+            font-size: 1.2rem
+    
+    .portfolio-card
+        padding: 2rem

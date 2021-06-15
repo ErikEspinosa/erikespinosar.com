@@ -1,0 +1,622 @@
+/* COLORS */
+/* FONTS */
+/* MIXINS */
+/* EXTENDS */
+.green-button, .red-button, .gray-button {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#contact .social input[type="email"], #contact .social input[type="submit"] {
+  height: 50px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#web-design .content, #graphic-design .content, #e-commerce .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#email-stick, #whatsapp-stick {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+#email-stick p, #whatsapp-stick p {
+  font-size: 35px;
+  margin: 0;
+}
+
+#contact .social .social-items .facebook, #contact .social .social-items .linkedin, #contact .social .social-items .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+#contact .social .social-items .facebook p, #contact .social .social-items .linkedin p, #contact .social .social-items .github p {
+  font-size: 30px;
+  margin: 0;
+  line-height: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #424242;
+  overflow-x: hidden;
+}
+
+body p {
+  line-height: 22pt;
+}
+
+body a {
+  color: #424242;
+  text-decoration: none;
+}
+
+body h1, body h2, body h3 {
+  font-family: "Paytone One", sans-serif;
+}
+
+.green-button {
+  background-color: #00908e;
+  color: white;
+}
+
+.red-button {
+  background-color: #7d1619;
+  color: white;
+}
+
+.gray-button {
+  background-color: #424242;
+  color: white;
+}
+
+#whatsapp-stick {
+  left: 80px;
+}
+
+#menu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#menu .line-1, #menu .line-2, #menu .line-3 {
+  width: 60%;
+  background-color: white;
+  height: 3px;
+  border-radius: 30px;
+  margin: auto;
+}
+
+#menu .line-1 {
+  margin-top: 17px;
+}
+
+#menu .line-2 {
+  margin-top: 5px;
+}
+
+#menu .line-3 {
+  margin-top: 5px;
+}
+
+.modal-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.modal-screen .close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7d1619;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal-screen .close p {
+  margin: 0;
+  line-height: 0;
+}
+
+.modal-screen .close p i {
+  font-size: 25px;
+}
+
+.modal-screen .content {
+  background-color: white;
+  padding: 5%;
+}
+
+.modal-screen .content h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.modal-screen .content h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #00908e;
+  margin-bottom: 30px;
+}
+
+.modal-screen .content ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.modal-screen .content ul li {
+  margin-bottom: 15px;
+}
+
+#splash, #about, #web-design, #graphic-design, #e-commerce, #contact {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#splash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../assets/splash.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/splash.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 10%;
+}
+
+#splash h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#splash h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#splash h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+#go-down {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+  margin-left: calc(50% - 40px);
+  cursor: pointer;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url(../assets/about.jpg);
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../assets/about.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding: 0 20%;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#web-design, #graphic-design, #e-commerce, #contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#web-design h2, #graphic-design h2, #e-commerce h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#web-design h3, #graphic-design h3, #e-commerce h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#web-design .content {
+  background-color: #00b4b1;
+  color: #f9e093;
+}
+
+#web-design .content h2 {
+  color: #f9e093;
+}
+
+#web-design .content h3 {
+  color: #00908e;
+}
+
+#web-design .image {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 180, 177, 0.75)), to(rgba(0, 180, 177, 0.75))), url(../assets/web-design.jpg);
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), linear-gradient(180deg, rgba(0, 180, 177, 0.75), rgba(0, 180, 177, 0.75)), url(../assets/web-design.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+#graphic-design .content {
+  background-color: #1d1e1e;
+  color: #a4d296;
+}
+
+#graphic-design .content h2 {
+  color: #a4d296;
+}
+
+#graphic-design .content h3 {
+  color: #00908e;
+}
+
+#graphic-design .image {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), -webkit-gradient(linear, left top, left bottom, from(rgba(29, 30, 30, 0.75)), to(rgba(29, 30, 30, 0.75))), url(../assets/graphic-design.jpg);
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), linear-gradient(180deg, rgba(29, 30, 30, 0.75), rgba(29, 30, 30, 0.75)), url(../assets/graphic-design.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+#e-commerce .content {
+  background-color: #b11f24;
+  color: #9cd5c4;
+}
+
+#e-commerce .content h2 {
+  color: #9cd5c4;
+}
+
+#e-commerce .content h3 {
+  color: #7d1619;
+}
+
+#e-commerce .image {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), -webkit-gradient(linear, left top, left bottom, from(rgba(177, 31, 36, 0.75)), to(rgba(177, 31, 36, 0.75))), url(../assets/e-commerce.jpg);
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 3px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 6px), linear-gradient(180deg, rgba(177, 31, 36, 0.75), rgba(177, 31, 36, 0.75)), url(../assets/e-commerce.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+#quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(white)), url(../assets/quote.jpg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), white), url(../assets/quote.jpg);
+  -ms-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding: 0 15%;
+  text-align: center;
+}
+
+#quote h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+#contact h3 {
+  color: white;
+  font-size: 50px;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#contact .content {
+  background-color: #424242;
+  padding: 20% 10%;
+}
+
+#contact .content p, #contact .content a {
+  color: #efb27a;
+}
+
+#contact .content p {
+  margin: 0;
+}
+
+#contact .social {
+  background-color: #1d1e1e;
+  padding: 20% 10%;
+}
+
+#contact .social input[type="email"] {
+  background-color: rgba(66, 66, 66, 0.3);
+  color: white;
+}
+
+#contact .social input[type="email"]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#contact .social input[type="email"]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#contact .social input[type="email"]::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#contact .social input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#contact .social input[type="submit"] {
+  background-color: #424242;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#contact .social .social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#contact .social .social-items .facebook {
+  background-color: #3C5B9B;
+  color: white;
+}
+
+#contact .social .social-items .linkedin {
+  background-color: #2977C9;
+  color: white;
+}
+
+#contact .social .social-items .github {
+  background-color: #24292E;
+  color: white;
+}
+
+footer {
+  background-color: #1d1e1e;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+  #web-design .content, #graphic-design .content, #e-commerce .content {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    padding: 10% 5%;
+  }
+  #email-stick, #whatsapp-stick {
+    top: inherit;
+    left: inherit;
+    right: 10px;
+    bottom: 10px;
+  }
+  #email-stick {
+    right: 70px;
+  }
+  #menu {
+    top: 10px;
+    right: 10px;
+  }
+  .modal-screen {
+    padding-top: 50px;
+  }
+  .modal-screen .close {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+  }
+  .modal-screen .content h2 {
+    font-size: 25px;
+  }
+  body {
+    font-size: 16px;
+  }
+  body p {
+    line-height: 20pt;
+  }
+  body h2 {
+    font-size: 35px;
+  }
+  body h3 {
+    font-size: 20px;
+  }
+  #splash {
+    padding: 0 5%;
+  }
+  #splash h1 {
+    font-size: 40px;
+  }
+  #splash h2 {
+    font-size: 18px;
+  }
+  #splash h3 {
+    font-size: 12px;
+  }
+  #go-down {
+    width: 60px;
+    height: 60px;
+    margin-left: calc(50% - 30px);
+  }
+  #about {
+    padding: 0 5%;
+  }
+  #about h2 {
+    font-size: 40px;
+  }
+  #web-design, #graphic-design, #e-commerce, #contact {
+    display: block;
+  }
+  #web-design h2, #graphic-design h2, #e-commerce h2 {
+    font-size: 40px;
+  }
+  #web-design h3, #graphic-design h3, #e-commerce h3 {
+    margin: 0;
+  }
+  #web-design .image, #graphic-design .image, #e-commerce .image {
+    min-height: 30%;
+  }
+  #web-design .content, #graphic-design .content, #e-commerce .content {
+    min-height: 70%;
+  }
+  #quote {
+    padding: 0 5%;
+  }
+  #quote h2 {
+    font-size: 35px;
+  }
+  #contact h3 {
+    font-size: 30px;
+  }
+  #contact .content, #contact .social {
+    padding: 20% 5%;
+  }
+  #contact .content input[type="email"], #contact .social input[type="email"] {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
